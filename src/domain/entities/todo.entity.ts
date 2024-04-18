@@ -22,6 +22,6 @@ export class TodoEntity {
         throw new Error("Completed at is not a valid date");
     }
 
-    return new TodoEntity(id, text, newCompletedAt);
+    return new TodoEntity(id, text, completedAt!);
   }
 }
